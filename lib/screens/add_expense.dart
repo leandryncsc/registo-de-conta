@@ -104,8 +104,10 @@ class _AddExpenseState extends State<AddExpense> {
                     child: ElevatedButton(
                         onPressed: () {
                           if (_fromKey.currentState!.validate()) {
-                            addExpense(_controllerTitle.text,
-                                _controllerMoney.doubleValue,);
+                            addExpense(
+                              _controllerTitle.text,
+                              _controllerMoney.doubleValue,
+                            );
                           }
                         },
                         child: Text(validExpense() ? "Adicionar" : "Alterar")),
@@ -129,7 +131,10 @@ class _AddExpenseState extends State<AddExpense> {
     }
   }
 
-  void addExpense(String title, double cost,) {
+  void addExpense(
+    String title,
+    double cost,
+  ) {
     String? date = DateFormat("dd/MM/yyyy").format(DateTime.now());
 
     _editExpense!.title = title;
@@ -144,10 +149,16 @@ class _AddExpenseState extends State<AddExpense> {
   }
 
   Future<bool> _requestPop() async {
-    if(!validExpense()) {
-      showDialog(context: context, builder: (context) {
-        return CustomAlertDialog(title: "Descartar alterações?", description: "Se sair as alterações serão perdidas.", validatePop: false,);
-      });
+    if (!validExpense()) {
+      showDialog(
+          context: context,
+          builder: (context) {
+            return CustomAlertDialog(
+              title: "Descartar alterações?",
+              description: "Se sair as alterações serão perdidas.",
+              validatePop: false,
+            );
+          });
 
       return false;
     } else {

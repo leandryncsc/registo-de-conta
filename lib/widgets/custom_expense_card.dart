@@ -17,7 +17,8 @@ class ExpenseCard extends StatelessWidget {
       child: Slidable(
         child: Container(
           decoration: BoxDecoration(
-            border: Border.all(width: 2, color: Colors.deepPurple.shade200),
+            border:
+                Border.all(width: 2, color: Color.fromARGB(255, 12, 129, 8)),
             borderRadius: BorderRadius.circular(4),
           ),
           padding: const EdgeInsets.all(16),
