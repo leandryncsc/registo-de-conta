@@ -52,8 +52,8 @@ android {
         applicationId "com.leandro.lembrete_contas"
         minSdkVersion flutter.minSdkVersion
         targetSdkVersion flutter.targetSdkVersion
-        versionCode flutterVersionCode.toInteger()
-        versionName flutterVersionName
+        versionCode 1
+        versionName "Versao Final"
     }
 
       signingConfigs {
