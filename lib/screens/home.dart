@@ -53,9 +53,11 @@ class _HomeState extends State<Home> {
                         height: 220,
                         child: Image.asset(empty),
                       ),
-                      const Text("No momento sua lista esta vazia!",
-                          style: TextStyle(
-                              fontSize: 14, fontStyle: FontStyle.normal)),
+                      const Text(
+                        "No momento sua lista esta vazia!",
+                        style: TextStyle(
+                            fontSize: 14, fontStyle: FontStyle.normal),
+                      ),
                     ],
                   )
                 : ListView.builder(
@@ -79,20 +81,21 @@ class _HomeState extends State<Home> {
                     const TextStyle(fontSize: 16, fontStyle: FontStyle.italic),
               ),
               ElevatedButton(
-                  onPressed: () {
-                    showDialog(
-                        context: context,
-                        builder: (context) {
-                          return CustomAlertDialog(
-                            title: "Pagar tudo?",
-                            description:
-                                "Deseja realmente pagar todas as suas contas?",
-                            onPlay: _onPayEverything,
-                            validatePop: true,
-                          );
-                        });
-                  },
-                  child: const Text("Pagar tudo")),
+                onPressed: () {
+                  showDialog(
+                      context: context,
+                      builder: (context) {
+                        return CustomAlertDialog(
+                          title: "Pagar tudo?",
+                          description:
+                              "Deseja realmente pagar todas as suas contas?",
+                          onPlay: _onPayEverything,
+                          validatePop: true,
+                        );
+                      });
+                },
+                child: const Text("Pagar tudo"),
+              ),
             ],
           )
         ]),
