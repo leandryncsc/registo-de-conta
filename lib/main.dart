@@ -18,9 +18,11 @@ class MyApp extends StatelessWidget {
           seedColor: const Color.fromARGB(255, 12, 129, 8),
         ),
         elevatedButtonTheme: ElevatedButtonThemeData(
-            style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(
-                    const Color.fromARGB(255, 182, 16, 10)))),
+          style: ButtonStyle(
+            backgroundColor: MaterialStateProperty.all(
+                const Color.fromARGB(255, 182, 16, 10)),
+          ),
+        ),
       ),
       home: Home(),
     );
