@@ -66,8 +66,8 @@ class _AddExpenseState extends State<AddExpense> {
                           }
                         },
                         decoration: const InputDecoration(
-                          label: Text("Conta"),
-                          hintText: "Ex: Boleto água",
+                          label: Text("Contas"),
+                          hintText: "Ex: Boleto internet",
                           border: OutlineInputBorder(),
                         ),
                       ),
@@ -82,7 +82,7 @@ class _AddExpenseState extends State<AddExpense> {
                         keyboardType: TextInputType.number,
                         decoration: const InputDecoration(
                           label: Text("Valor"),
-                          hintText: "Ex: 100,00",
+                          hintText: "Ex: 500,00",
                           border: OutlineInputBorder(),
                         ),
                       ),

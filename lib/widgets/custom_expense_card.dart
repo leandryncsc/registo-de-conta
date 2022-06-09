@@ -68,7 +68,7 @@ class ExpenseCard extends StatelessWidget {
             children: [
               SlidableAction(
                 onPressed: _editExpense,
-                backgroundColor: Color.fromARGB(255, 17, 131, 7),
+                backgroundColor: Color.fromARGB(255, 185, 197, 8),
                 foregroundColor: Colors.white,
                 icon: Icons.edit,
                 label: 'Editar',
