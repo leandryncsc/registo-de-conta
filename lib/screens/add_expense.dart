@@ -4,6 +4,7 @@ import 'package:intl/intl.dart';
 import 'package:ja_paguei/models/expense.dart';
 import 'package:ja_paguei/widgets/custom_alert_dialog.dart';
 
+// ignore: must_be_immutable
 class AddExpense extends StatefulWidget {
   AddExpense({Key? key, this.expense}) : super(key: key);
 
@@ -64,6 +65,7 @@ class _AddExpenseState extends State<AddExpense> {
                           if (value == null || value.isEmpty) {
                             return "Preencha o título, para continuar.";
                           }
+                          return null;
                         },
                         decoration: const InputDecoration(
                           label: Text("Contas"),
@@ -78,6 +80,7 @@ class _AddExpenseState extends State<AddExpense> {
                           if (value == null || value.isEmpty) {
                             return "Preencha o valor, para continuar.";
                           }
+                          return null;
                         },
                         keyboardType: TextInputType.number,
                         decoration: const InputDecoration(
